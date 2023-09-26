@@ -1,0 +1,159 @@
+@import url("https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap");
+:root {
+  /* ### Primary */
+
+  --Orange: hsl(25, 97%, 53%);
+
+  /* ### Neutral */
+
+  --White: hsl(0, 0%, 100%);
+  --Light-Grey: hsl(217, 12%, 63%);
+  --Medium-Grey: hsl(216, 12%, 54%);
+  --Dark-Blue: hsl(213, 19%, 18%);
+  --Very-Dark-Blue: hsl(216, 12%, 8%);
+}
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  display: flex;
+  min-height: 100vh;
+  align-items: center;
+  justify-content: center;
+  font-family: "overpass", sans-serif;
+  background-color: var(--Very-Dark-Blue);
+}
+.container {
+  margin: 1em;
+  background-color: var(--Dark-Blue);
+  height: 400px;
+  width: 380px;
+  border-radius: 20px;
+  padding: 30px 20px;
+  position: relative;
+}
+
+/* ------------------------------------------------------------------------------------ */
+/* RATING CLASSES */
+.star {
+  width: 40px;
+  height: 40px;
+  background-color: hsla(214, 9%, 34%, 0.5);
+  display: flex;
+  align-items: center;
+  border-radius: 50px;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+h1 {
+  color: var(--White);
+  font-weight: 700;
+}
+
+.feedback {
+  font-family: "overpass", sans-serif;
+  font-size: 15px;
+  color: var(--Medium-Grey);
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.rating-num {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  margin-bottom: 20px;
+  margin-top: 40px;
+}
+.rating-num button {
+  width: 40px;
+  height: 40px;
+  background-color: hsla(214, 9%, 34%, 0.5);
+  display: flex;
+  border: none;
+  align-items: center;
+  border-radius: 50px;
+  justify-content: center;
+  color: var(--Medium-Grey);
+
+}
+.rating-num span:hover {
+  background-color: var(--Medium-Grey);
+  color: var(--White);
+  cursor: pointer;
+}
+.rating-num   button:focus{
+  background-color: var(--Orange);
+  color: white;
+  border: none;
+}
+
+.submit  {
+  border: none;
+  background-color: var(--Orange);
+  color: var(--White);
+  border-radius: 30px;
+  width: 350px;
+  height: 40px;
+  font-family: "overpass", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  margin-top: 20px;
+}
+button:hover {
+  background-color: var(--White);
+  color: var(--Orange);
+  cursor: pointer;
+}
+/* ------------------------------------------------------------------------------------------- */
+/* Thanks classes */
+
+.thanks {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 400px;
+  width: 380;
+  border-radius: 20px;
+  padding: 30px 20px;
+  background-color: var(--Dark-Blue);
+}
+.thanks-contain {
+  text-align: center;
+}
+.thanks-contain img{
+  margin-top: 20px;
+}
+.selection {
+  border-radius: 15px;
+  background-color: hsla(214, 9%, 34%, 0.5);
+  max-width: 200px;
+  padding: 5px 10px;
+  color: var(--Orange);
+  margin-left: 70px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.exclamation{
+  font-size: 30px;
+  color: var(--White);
+  font-family: 'overpass',sans-serif;
+  font-weight: 700;
+  margin-top: 30px;
+}
+
+.feedback-statement{
+  color: var(--Medium-Grey);
+  font-family: 'overpass',sans-serif;
+  font-weight: 400;
+  margin-top: 10px;
+}
+
+.hidden {
+  display: none;
+}
